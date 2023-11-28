@@ -1,0 +1,82 @@
+@charset 'utf-8';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+a,
+a:hover {
+  color: #fabbbb;
+  text-decoration: none;
+}
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+#header {
+  background: #000;
+  color: #fff;
+}
+#header nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gnb {
+  display: flex;
+}
+
+.gnb > li {
+  position: relative; /* submenu 위치 저장을 위한 기준점 */
+}
+
+/* jquery에서 on클래스 부여했을 대 디자인 */
+.gnb > li.on {
+  background: #f39;
+}
+
+.gnb > li > a {
+  display: block;
+  padding: 10px 40px;
+  border: 1px solid #fff;
+}
+
+.submenu {
+  position: absolute;
+  top: 44px; /* 얘는 항상 붙여두기 */
+  left: 0;
+  width: 100%;
+  background: #ff5;
+  padding-top: 20px;
+
+  /* jQuery에서 슬라이드 업/다운 효과를 위한 설정 */
+  display: none;
+}
+
+.submenu li a {
+  display: block;
+  border: 1px solid seashell;
+  padding: 10px;
+  text-align: center;
+  background: lightseagreen;
+  color: #fff;
+}
+
+.submenu li a:hover {
+  background: seagreen;
+}
+
+#footer {
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+  background: #334;
+}
