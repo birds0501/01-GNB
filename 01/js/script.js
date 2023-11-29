@@ -16,7 +16,7 @@ $(function () {
     $(this).addClass("on");
   }); //this-이벤트를 발생시킨(마우스가 들어간 메뉴) 그 놈을 특성하여 찾아낼 수 있다.
 
-  //메뉴 영역에 마우스가 나갈 때
+  //메뉴 영역에서 마우스가 나갈 때
   $menu.on("mouseleave", function () {
     //서브메뉴를 slide up
     $submenu.stop().slideUp(duration);
